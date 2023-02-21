@@ -19,6 +19,25 @@ public class CustomerController {
     *
     * */
 
+    /*
+    *  Whenever user try to send data with any of empty field then he/she will
+    * get up message, that particular field is missing.
+    *
+    * for example
+    * if customer forget to enter city name, in that case there will be pop-up message
+    * that city name can't be empty
+    * same thing will happen with others attributes too.
+    *
+    * In code cases if user will send wrong input in that case too, there will be pop-up
+    * which will show Invalid or wrong input
+    *
+    * for example
+    * As we know Pincode will be of length 6 and mobile number will be of length 10,
+    * considering indian data.
+    * in this case use will receive invalid input.
+    *
+    * */
+
     private CustomerService customerService;
 
     public CustomerController(CustomerService customerService) {
